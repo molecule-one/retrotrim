@@ -37,10 +37,21 @@ outputs must not be assumed compatible with the existing scorers and cutoffs.
 
 ## Set up the models
 
-Extract the assets archive into the repository root:
+Download the assets archive `uspto-reaction-scorers-assets.tar.gz` (483 MiB)
+from [Google Drive](https://drive.google.com/file/d/1mpUbN1labZt34r8Tt7C7nNjlKVYFVCLk/view?usp=sharing).
+From a terminal, `gdown` handles Google Drive's large-file confirmation page:
 
 ```bash
-tar -xzf /path/to/uspto-reaction-scorers-assets.tar.gz -C .
+python -m pip install gdown
+gdown 1mpUbN1labZt34r8Tt7C7nNjlKVYFVCLk -O uspto-reaction-scorers-assets.tar.gz
+```
+
+Verify the checksum, then extract the archive into the repository root:
+
+```bash
+shasum -a 256 uspto-reaction-scorers-assets.tar.gz
+# 3acae81fabed9262d5f6dedc5da37fc583b80297bb0de030a44c444d9a76ca7b
+tar -xzf uspto-reaction-scorers-assets.tar.gz -C .
 ```
 
 The archive contains model weights, the reference index, training data, splits,
