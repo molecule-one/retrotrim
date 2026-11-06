@@ -1,0 +1,31 @@
+{
+  "model": "rgp",
+  "architecture_config": "models/rgp/config.json",
+  "seed": 20200101,
+  "batch_size": 128,
+  "precision": "16-mixed",
+  "limit_train_batches": 0.1,
+  "limit_val_batches": 0.1,
+  "optimizer": {
+    "name": "Adam",
+    "lr": 0.001
+  },
+  "checkpoint_monitor": "val/BinaryAUROC",
+  "checkpoint_mode": "max",
+  "early_stopping_patience": 8,
+  "split": {
+    "type": "RandomSplit",
+    "val_size": 0.05,
+    "test_size": 0,
+    "seed": 20200101
+  },
+  "max_epochs": 1000,
+  "node_budget": 16384,
+  "scheduler": {
+    "name": "ReduceLROnPlateau",
+    "mode": "min",
+    "factor": 0.5,
+    "patience": 4,
+    "warmup_steps": 10000
+  }
+}

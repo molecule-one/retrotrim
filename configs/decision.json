@@ -1,0 +1,51 @@
+{
+  "combination": "reference_count >= 1 AND RP > threshold AND RGP > threshold",
+  "thresholds": {
+    "rp_threshold": 4.66879215893153e-08,
+    "rgp_threshold": 0.8639821410179138,
+    "min_reference_count": 1
+  },
+  "minimum_individual_recall_strict": 0.8,
+  "objective": "For each model independently, maximize precision subject to recall strictly above the floor. Highest cutoff breaks precision ties; tied scores are retained together.",
+  "threshold_convention": "score > threshold; midpoint between adjacent accepted/rejected score groups",
+  "input_rows": 500,
+  "individual_calibration": {
+    "rp": {
+      "threshold": 4.66879215893153e-08,
+      "rows": 500,
+      "excluded_nonfinite_scores": 0,
+      "accepted": 372,
+      "true_positives": 321,
+      "false_positives": 51,
+      "precision": 0.8629032258064516,
+      "recall": 0.8085642317380353
+    },
+    "rgp": {
+      "threshold": 0.8639821410179138,
+      "rows": 500,
+      "excluded_nonfinite_scores": 0,
+      "accepted": 371,
+      "true_positives": 318,
+      "false_positives": 53,
+      "precision": 0.8571428571428571,
+      "recall": 0.801007556675063
+    }
+  },
+  "combined_without_reference_gate": {
+    "rows": 500,
+    "accepted": 292,
+    "balanced_accuracy": 0.6904575578978259,
+    "precision": 0.9006849315068494,
+    "recall": 0.6624685138539043
+  },
+  "calibration": {
+    "rows": 500,
+    "accepted": 275,
+    "balanced_accuracy": 0.7362989410872808,
+    "precision": 0.9345454545454546,
+    "recall": 0.6473551637279596
+  },
+  "scope": "Each model is calibrated separately. Combining the model thresholds and reference gate can yield lower recall.",
+  "note": "Calibration statistics are measured on the calibration data.",
+  "calibration_source": "Published 500-reaction benchmark; independently maximize model precision subject to recall strictly above 0.8."
+}

@@ -1,0 +1,29 @@
+{
+  "implementation": "rdkit-kernel-v1",
+  "runtime": {
+    "chemistry": "RDKit 2022.9.5",
+    "graph_canonicalization": "igraph 0.11.8 / BLISS",
+    "storage": "SQLite",
+    "schema": "sqlite-reference-v2"
+  },
+  "source_sha256": {
+    "reaction_scorers/reference.py": "30ceccf6b9a4753f256e2ab51fe29099ec2f0b506f602f6188ab19e26044bca3",
+    "reaction_scorers/reference_keys.py": "97baa50649268b6c99c5b7fa4c6d3c8c247141fbb97dcc39db8dfe9c9ec4b52a",
+    "reaction_scorers/reference_sqlite.py": "0c23f784f8156ffe8eaa869e7625cd935b53ca67a9753f80fa18a3746703a99f",
+    "reaction_scorers/reference_valences.json": "551545ffab18d4fd33c59c6b232c940ecadd806e312a12f9eb5b6a5f9b52e03b",
+    "tools/build_reference_index.py": "7ea8aa65bdb60049c0739731cf741512969e4f505d40833390f4e69d235d182b",
+    "tools/validate_reference.py": "3076742b91fd58ed13375af33f51aaa38875e1d937a8700cb4db4d2771142f45",
+    "configs/rrs_excluded_rows.json": "e3e9a7cb14e55cc4fbf7b1c1fbd35ba55f1e7d0437a71b84f4440d45dcc7db2d",
+    "pyproject.toml": "0161dbdb9d9d73d959f28993a3e4a00c512dc0a8883b96de790d2c156c9b7b9b"
+  },
+  "validation_reports": [
+    "validation/reference_full_corpus.json",
+    "validation/reference_index_build.json"
+  ],
+  "grouping_rules": [
+    "fine and coarse reaction grouping",
+    "aromatic bond assignment and sp2-cycle rules",
+    "exact-match stereo-presence and isotope handling",
+    "unique union counts, source-row identity, and last exact duplicate"
+  ]
+}

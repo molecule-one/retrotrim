@@ -1,0 +1,27 @@
+{
+  "artifact": "uspto-reaction-scorers-assets.tar.gz",
+  "bytes": 506549082,
+  "sha256": "3acae81fabed9262d5f6dedc5da37fc583b80297bb0de030a44c444d9a76ca7b",
+  "files": [
+    "ASSET_MANIFEST.json",
+    "README_ASSETS.txt",
+    "configs/rgp_training.json",
+    "configs/rp_training.json",
+    "configs/rrs_excluded_rows.json",
+    "models/manifest.json",
+    "models/rgp/config.json",
+    "models/rgp/feature_values.json",
+    "models/rgp/weights.pt",
+    "models/rp/config.json",
+    "models/rp/weights.pt",
+    "models/rrs/reference.sqlite",
+    "provenance/training_artifacts.json",
+    "training/rgp/data.zip",
+    "training/rgp/splits.zip",
+    "training/rp/data.zip",
+    "training/rp/splits.zip"
+  ],
+  "payload_files": 17,
+  "all_final_payload_checksums_verified": true,
+  "passed": true
+}

@@ -1,0 +1,21 @@
+{
+  "thresholds": {
+    "rp_threshold": 1.9536646643727844e-12,
+    "rgp_threshold": 0.12769793719053266,
+    "min_reference_count": 1
+  },
+  "selection_constraint": "At least 9/10 fixed targets have nontrivial complete routes in actual live search",
+  "candidate_value_source": "Finite grid proposed from existing reaction score distributions; reaction recall is NOT the selection constraint",
+  "calibration_statistics": {
+    "rows": 500,
+    "accepted": 390,
+    "balanced_accuracy": 0.7038345846274241,
+    "precision": 0.8794871794871795,
+    "recall": 0.8639798488664987
+  },
+  "calibration_warning": "Reaction precision statistics are measured on their calibration sample, not held-out validation",
+  "candidate": "mix_loose90_loose95_rp",
+  "selected_generator": "rootaligned",
+  "observed_target_coverage": 0.9,
+  "selection_result": "Meets route coverage constraint in these calibration targets; no held-out evaluation"
+}

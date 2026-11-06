@@ -1,0 +1,24 @@
+{
+  "rp": {
+    "rows": 969320,
+    "split_counts": {
+      "train": 872388,
+      "val": 48466,
+      "test": 48466
+    },
+    "data_split_ids_match_in_order": true,
+    "split_flags_binary_and_disjoint": true,
+    "matches_random_split_seed_20200101": true
+  },
+  "rgp": {
+    "rows": 3078507,
+    "split_counts": {
+      "train": 2924582,
+      "val": 153925,
+      "test": 0
+    },
+    "data_split_ids_match_in_order": true,
+    "split_flags_binary_and_disjoint": true,
+    "matches_random_split_seed_20200101": true
+  }
+}

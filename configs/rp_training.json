@@ -1,0 +1,36 @@
+{
+  "model": "rp",
+  "architecture_config": "models/rp/config.json",
+  "seed": 20200101,
+  "batch_size": 8,
+  "precision": "16-mixed",
+  "limit_train_batches": 0.1,
+  "limit_val_batches": 0.1,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 5e-05,
+    "weight_decay": 0.05
+  },
+  "checkpoint_monitor": "val/TokenAccuracy",
+  "checkpoint_mode": "max",
+  "early_stopping_patience": 300,
+  "split": {
+    "type": "RandomSplit",
+    "val_size": 0.05,
+    "test_size": 0.05,
+    "seed": 20200101
+  },
+  "gradient_clip_val": 2.0,
+  "max_steps": 495944,
+  "augmentation": {
+    "multicanonical": 10,
+    "drop_compound_prob": 0.25,
+    "snapped_prob": 0.5
+  },
+  "scheduler": {
+    "name": "warmup_cosine",
+    "warmup_steps": 3000,
+    "total_steps": 495944,
+    "decay": 0.01
+  }
+}

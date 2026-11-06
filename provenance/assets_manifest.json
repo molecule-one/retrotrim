@@ -1,0 +1,70 @@
+{
+  "format": "uspto-reaction-scorers-assets-v1",
+  "human_evaluation_reactions": 0,
+  "files": {
+    "models/rp/config.json": {
+      "bytes": 14757,
+      "sha256": "42147555222aecf3c9acda6d634c3a5153f0b536e25293ea8a27357abc316cf8"
+    },
+    "models/rp/weights.pt": {
+      "bytes": 77304946,
+      "sha256": "7c125f6f52adaec3ccf5c7c300becd7a7f5b2a1001c4ac3195ceaae6aae82947"
+    },
+    "models/rgp/feature_values.json": {
+      "bytes": 3803,
+      "sha256": "16af253255b15624fca5e25d871b3413748c0524f9e66b9f2e3463de25676b8e"
+    },
+    "models/rgp/config.json": {
+      "bytes": 460,
+      "sha256": "ce6d5df83fa25995bd86f2b3bb7034e18579070b22042673c20666921fbc5aa0"
+    },
+    "models/rgp/weights.pt": {
+      "bytes": 7175408,
+      "sha256": "c4dc3c5aefc7ce5a1dee32406074f2b6d33cdd0ca9edc3534e4df3829479c858"
+    },
+    "models/rrs/reference.sqlite": {
+      "bytes": 127586304,
+      "sha256": "66582615c4af9571be07b1da8cf7f8c604d505556d66169960ef196422cf0433"
+    },
+    "training/rp/data.zip": {
+      "bytes": 75395773,
+      "sha256": "d46b539b5e490ec894ea6e85d842c99b0997acae0539e49c0f925e548c98f5df"
+    },
+    "training/rgp/data.zip": {
+      "bytes": 269097834,
+      "sha256": "501d8c0e3ded977f256cb6c3e23f4dd7dc889db263be4b256820a1ca5ffbeb90"
+    },
+    "training/rgp/splits.zip": {
+      "bytes": 7948643,
+      "sha256": "3fbb70ec153ed77bf2715e36f75f5e1541b0ac48d8803baa5f38e4003369e109"
+    },
+    "training/rp/splits.zip": {
+      "bytes": 2446930,
+      "sha256": "0dd7bc4cd9b8d0a963b6c18b306241e3aeca65a3a9668d6bc9695efc40e79187"
+    },
+    "models/manifest.json": {
+      "bytes": 1299,
+      "sha256": "d3897d80614c92b26683a87ee42491aa27046cabc6df613af3d83cd4aeffaa87"
+    },
+    "provenance/training_artifacts.json": {
+      "bytes": 2252,
+      "sha256": "bbbe794eb20b685295f825661604a360d46c2fc81a99e3fefa92dbffac656ded"
+    },
+    "configs/rp_training.json": {
+      "bytes": 777,
+      "sha256": "cc6e473208d9df100b9380dcd1dd1e4103e1dd63f5aab58d001de4b1603895c7"
+    },
+    "configs/rgp_training.json": {
+      "bytes": 651,
+      "sha256": "2653daae0ca4e0ec6a075fa127c7d434fe8b5686a932b7909bee246d69c83930"
+    },
+    "configs/rrs_excluded_rows.json": {
+      "bytes": 8837,
+      "sha256": "e3e9a7cb14e55cc4fbf7b1c1fbd35ba55f1e7d0437a71b84f4440d45dcc7db2d"
+    },
+    "README_ASSETS.txt": {
+      "bytes": 580,
+      "sha256": "0f8d8b60e6d80c2b6dd8bcf4ac32df7c0bec7debaaa5a679e6452756ecbb2806"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "source_rows": 969320,
+  "indexed_rows": 968581,
+  "excluded_rows": 739,
+  "fine_coarse_groups": 295811,
+  "exact_partition_mismatches": 0,
+  "mismatch_examples": [],
+  "index_bytes": 127586304,
+  "index_sha256": "66582615c4af9571be07b1da8cf7f8c604d505556d66169960ef196422cf0433",
+  "full_corpus_check": true,
+  "elapsed_seconds": 192,
+  "passed": true,
+  "fine_coarse_graphs_checked": 968581,
+  "fine_coarse_graph_mismatches": 0,
+  "graph_canonicalizer": "igraph 0.11.8 / BLISS"
+}

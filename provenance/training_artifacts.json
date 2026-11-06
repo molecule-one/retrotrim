@@ -1,0 +1,61 @@
+{
+  "datasets_and_splits": {
+    "rp/data.zip": {
+      "bytes": 75395773,
+      "sha256": "d46b539b5e490ec894ea6e85d842c99b0997acae0539e49c0f925e548c98f5df",
+      "table_member": "reactions.tsv",
+      "table_sha256": "5d603b57e0e0867310a7bca996a36bd6ae8954c7801ad1ba8da08b018fb1d473",
+      "archive_member": "training/rp/data.zip"
+    },
+    "rgp/data.zip": {
+      "bytes": 269097834,
+      "sha256": "501d8c0e3ded977f256cb6c3e23f4dd7dc889db263be4b256820a1ca5ffbeb90",
+      "table_member": "reactions.tsv",
+      "table_sha256": "b3d9e3408c7f6d02a8298cb3c1862836de974d40c2bd70bfe6209a85804c17ad",
+      "archive_member": "training/rgp/data.zip"
+    },
+    "rgp/splits.zip": {
+      "bytes": 7948643,
+      "sha256": "3fbb70ec153ed77bf2715e36f75f5e1541b0ac48d8803baa5f38e4003369e109",
+      "table_member": "split.tsv",
+      "table_sha256": "ed073129a9cca93ac00d94b44bf8ae900885f3a405a8b20633fd205e692e82b3",
+      "archive_member": "training/rgp/splits.zip"
+    },
+    "rp/splits.zip": {
+      "bytes": 2446930,
+      "sha256": "0dd7bc4cd9b8d0a963b6c18b306241e3aeca65a3a9668d6bc9695efc40e79187",
+      "table_member": "split.tsv",
+      "table_sha256": "6098eb25448652527c6b7eabec240660e5386624c585b007f41ea3f4162b0255",
+      "archive_member": "training/rp/splits.zip"
+    }
+  },
+  "training_runs": {
+    "rp": {
+      "model_id": "uspto-rp-v1",
+      "split": {
+        "type": "RandomSplit",
+        "val_size": 0.05,
+        "test_size": 0.05,
+        "seed": 20200101
+      },
+      "selected_checkpoint": "checkpoints/epoch=34-step=381640.ckpt",
+      "effective_config": "configs/rp_training.json"
+    },
+    "rgp": {
+      "model_id": "uspto-rgp-v1",
+      "split": {
+        "type": "RandomSplit",
+        "val_size": 0.05,
+        "test_size": 0,
+        "seed": 20200101
+      },
+      "selected_checkpoint": "checkpoints/epoch=52-step=121052.ckpt",
+      "effective_config": "configs/rgp_training.json"
+    }
+  },
+  "notes": [
+    "Reaction tables contain mapped SMILES; RGP tables also include class and datum_type.",
+    "Row IDs link the reaction tables to their split assignments. Preserve row order when joining them.",
+    "The RGP training table includes positive reactions, forward negatives, and generated negatives."
+  ]
+}

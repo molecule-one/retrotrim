@@ -1,0 +1,47 @@
+{
+  "rp": {
+    "model_id": "uspto-rp-v1",
+    "original_checkpoint": "checkpoints/epoch=34-step=381640.ckpt",
+    "epoch": 34,
+    "global_step": 381640,
+    "files": {
+      "config.json": {
+        "bytes": 14757,
+        "sha256": "42147555222aecf3c9acda6d634c3a5153f0b536e25293ea8a27357abc316cf8"
+      },
+      "weights.pt": {
+        "bytes": 77304946,
+        "sha256": "7c125f6f52adaec3ccf5c7c300becd7a7f5b2a1001c4ac3195ceaae6aae82947"
+      }
+    }
+  },
+  "rgp": {
+    "model_id": "uspto-rgp-v1",
+    "original_checkpoint": "checkpoints/epoch=52-step=121052.ckpt",
+    "epoch": 52,
+    "global_step": 121052,
+    "files": {
+      "feature_values.json": {
+        "bytes": 3803,
+        "sha256": "16af253255b15624fca5e25d871b3413748c0524f9e66b9f2e3463de25676b8e"
+      },
+      "config.json": {
+        "bytes": 460,
+        "sha256": "ce6d5df83fa25995bd86f2b3bb7034e18579070b22042673c20666921fbc5aa0"
+      },
+      "weights.pt": {
+        "bytes": 7175408,
+        "sha256": "c4dc3c5aefc7ce5a1dee32406074f2b6d33cdd0ca9edc3534e4df3829479c858"
+      }
+    }
+  },
+  "rrs": {
+    "model_id": "uspto-rrs-python-v1",
+    "files": {
+      "reference.sqlite": {
+        "bytes": 127586304,
+        "sha256": "66582615c4af9571be07b1da8cf7f8c604d505556d66169960ef196422cf0433"
+      }
+    }
+  }
+}

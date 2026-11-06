@@ -1,0 +1,49 @@
+{
+  "rows": 500,
+  "columns": [
+    "substrates",
+    "product",
+    "category",
+    "issue"
+  ],
+  "category_counts": {
+    "Safe bet": 394,
+    "Rather not": 59,
+    "Nonsense": 42,
+    "Worthwhile": 5
+  },
+  "csv_sha256": "b99d0d9b821b9b91d5e8f82e8ae09f44dc4b56410bc0f08f98cd191667cd31ff",
+  "sampling": "Score-informed selection balancing class proportions, score distributions, rank contributions, and issue categories. Metrics describe this selected sample.",
+  "metrics": {
+    "rp": {
+      "rows": 495,
+      "roc_auc": 0.7344071970648842,
+      "pr_auc_ap": 0.9148459328073155
+    },
+    "rgp": {
+      "rows": 495,
+      "roc_auc": 0.7143539227019149,
+      "pr_auc_ap": 0.9038458742769786
+    },
+    "rrs": {
+      "rows": 495,
+      "roc_auc": 0.7179976880936825,
+      "pr_auc_ap": 0.890446052229968
+    }
+  },
+  "binary_evaluation": {
+    "positive_categories": [
+      "Safe bet"
+    ],
+    "negative_categories": [
+      "Rather not",
+      "Nonsense"
+    ],
+    "excluded_categories": [
+      "Worthwhile"
+    ],
+    "rows": 495,
+    "positives": 394,
+    "negatives": 101
+  }
+}

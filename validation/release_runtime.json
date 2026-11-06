@@ -1,0 +1,41 @@
+{
+  "benchmark_rows": 500,
+  "inference": {
+    "rp": {
+      "rows": 500,
+      "device": "cuda:0",
+      "torch_version": "2.7.0+cu118",
+      "absolute_score_tolerance": 1e-05,
+      "maximum_absolute_score_error": 2.1057851703476516e-06,
+      "nonfinite_mask_matches": true,
+      "scores_match": true,
+      "full_metric_absolute_errors": {
+        "roc_auc": 0.0,
+        "pr_auc_ap": 0.0
+      }
+    },
+    "rgp": {
+      "rows": 500,
+      "device": "cuda:0",
+      "torch_version": "2.7.0+cu118",
+      "absolute_score_tolerance": 1e-05,
+      "maximum_absolute_score_error": 2.86102294921875e-06,
+      "nonfinite_mask_matches": true,
+      "scores_match": true,
+      "full_metric_absolute_errors": {
+        "roc_auc": 1.2227629551775365e-05,
+        "pr_auc_ap": 9.971172905132164e-07
+      },
+      "tie_note": "One positive/negative pair tied in the saved scores differs by 1.1920928955078125e-7 after float32 inference."
+    },
+    "rrs": {
+      "implementation": "rdkit-kernel-v1",
+      "index_source_rows": 969320,
+      "index_indexed_rows": 968581,
+      "rows_checked": 500,
+      "mismatches": 0,
+      "mismatch_examples": [],
+      "passed": true
+    }
+  }
+}

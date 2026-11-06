@@ -1,0 +1,11 @@
+{
+  "implementation": "rdkit-kernel-v1",
+  "workers": 4,
+  "source_rows": 4096,
+  "indexed_rows": 4095,
+  "skipped_rows": 1,
+  "schema": "sqlite-reference-v2",
+  "full_corpus_rebuilt": false,
+  "passed": true,
+  "scope_note": "The public builder was exercised on the first 4096 source rows with the published exclusions. Full-corpus graph and exact-group equivalence is recorded separately in reference_full_corpus.json."
+}

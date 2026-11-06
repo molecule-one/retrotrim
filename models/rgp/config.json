@@ -1,0 +1,29 @@
+{
+  "model_id": "2024_07_05_uspto_full_gat_4lay_width_512",
+  "architecture": {
+    "batch_norm": true,
+    "embedding_bias": true,
+    "fc_hidden_dim": 512,
+    "hidden_dim": 512,
+    "n_conv_layers": 4,
+    "n_fc_layers": 3,
+    "residual": true
+  },
+  "attention": {
+    "att_dim": 64,
+    "att_heads": 8,
+    "node_norm": true
+  },
+  "input_shape": [
+    [
+      136
+    ],
+    [
+      8
+    ]
+  ],
+  "featurizer": {
+    "features_variant": "bond-simple",
+    "supernode": true
+  }
+}
